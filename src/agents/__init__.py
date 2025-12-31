@@ -1,5 +1,5 @@
-from .weather_agent import weather_agent
+from .deep_research_agent import deep_research_agent
 
 __all__ = [
-    "weather_agent"
+    "deep_research_agent"
 ]
