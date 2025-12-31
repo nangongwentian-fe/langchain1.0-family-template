@@ -1,7 +1,7 @@
 [project]
-name = "study-langchain"
+name = "langchain1.0-family-template"
 version = "0.1.0"
-description = "学习与实践Langchain全家桶"
+description = "Langchain 1.0 全家桶（LangChain、LangGraph、LangSmith、DeepAgents）模板项目"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
