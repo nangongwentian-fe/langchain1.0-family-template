@@ -1,4 +1,5 @@
 from langchain_openai import ChatOpenAI
+from pydantic import SecretStr
 import os
 
 ali_bailian_chat_model = ChatOpenAI(
@@ -7,7 +8,7 @@ ali_bailian_chat_model = ChatOpenAI(
   # qwen的open ai格式的base url（如果不设置默认会走open ai官方的base url）
   base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
   # apikey
-  api_key=os.getenv("ALI_BAILIAN_LLM_API_KEY"),
+  api_key=SecretStr(os.getenv("ALI_BAILIAN_LLM_API_KEY") or ""),
   # 模型温度
   temperature=0
 )
