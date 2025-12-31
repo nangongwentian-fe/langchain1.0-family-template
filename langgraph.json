@@ -1,0 +1,15 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["."],
+  "graphs": {
+    "deep_research_agent": "./src/agents/deep_research_agent.py:deep_research_agent"
+  },
+  "http": {
+    "cors": {
+      "allow_origins": ["*"],
+      "allow_methods": ["*"],
+      "allow_headers": ["*"]
+    }
+  },
+  "env": "./.env"
+}
