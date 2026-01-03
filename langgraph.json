@@ -11,5 +11,7 @@
       "allow_headers": ["*"]
     }
   },
+  "image_distro": "wolfi",
+  "python_version": "3.12",
   "env": "./.env"
 }
